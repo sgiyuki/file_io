@@ -23,8 +23,8 @@ class text_io:
         except FileNotFoundError as err:
             print(err)
     
-    def print_file(self):
+    def print_data(self):
         print(self.data)
     
-    def get_file(self):
+    def get_data(self):
         return self.data
