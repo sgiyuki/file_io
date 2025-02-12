@@ -28,3 +28,18 @@ class text_io:
     
     def get_data(self):
         return self.data
+
+    def write_data(self, path, data):
+        """
+        テキストファイルを出力する関数
+
+        Args:
+            path (str): ファイルパス
+            data (str):
+                [0] = "Hello World!!\n"
+                [1] = "This is text file!!\n"
+                [2] = "End of file!!\n"
+        """
+
+        with open(path, 'w', encoding='utf-8') as f:
+            f.writelines(data)
